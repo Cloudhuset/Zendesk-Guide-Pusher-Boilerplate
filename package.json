@@ -14,7 +14,7 @@
   },
   "homepage": "https://github.com/Cloudhuset/Zendesk-Guide-Pusher-Boilerplate#readme",
   "dependencies": {
-    "zendesk-theme-helper": "git+ssh://git@github.com:Cloudhuset/Zendesk-Guide-Pusher.git#master",
+    "zendesk-guide-pusher": "Cloudhuset/Zendesk-Guide-Pusher",
     "dotenv": "^4.0.0",
     "gulp": "^3.9.1",
     "gulp-sass": "^3.1.0"

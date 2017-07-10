@@ -6,12 +6,13 @@ require('dotenv').config();
 const gulp    = require('gulp');
 const sass    = require('gulp-sass');
 const guidePusher = require('zendesk-guide-pusher');
+const config = require('./config');
 
 // Compile SASS
 gulp.task('sass', () => {
     return gulp.src('./sass/**/*.scss')
         .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('./dist'));
+        .pipe(gulp.dest('./theme'));
 });
 
 // Watch SASS and compile
@@ -43,12 +44,21 @@ gulp.task('publish', function(done) {
 	});
 });
 
+gulp.task('upload-publish', function(done) {
+    guidePusher.upload(config)
+	.then(function() {
+		return guidePusher.publish(config)
+	}).then(function() {
+		done();
+	});
+});
+
 // Watch theme and push
 gulp.task('upload:watch', () => {
-    gulp.watch(['./dist/*', './templates/*'], ['upload']);
+    gulp.watch(['./theme/**'], ['upload']);
 });
 
 // Watch theme and push + publish
-gulp.task('push-publish:watch', () => {
-    gulp.watch(['./dist/*', './templates/*'], ['upload', 'publish']);
+gulp.task('upload-publish:watch', () => {
+    gulp.watch(['./theme/**'], ['upload-publish']);
 });
