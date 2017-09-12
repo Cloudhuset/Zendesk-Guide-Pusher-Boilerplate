@@ -9,6 +9,27 @@ $(document).ready(function() {
     e.preventDefault();
     window.open(this.href, "", "height = 500, width = 500");
   });
+  
+  $('#query').attr('placeholder','How can we help?');
+  
+  $.get( "/api/v2/help_center/articles.json?per_page=100" ).done(function( data ) {
+
+   var myArray = [];
+
+   $.each(data.articles, function (i, object) {
+
+   var articleId = object.id;
+   var articleTitle = object.title;
+
+   myArray.push(articleTitle);
+
+   });
+
+   $( "#query" ).autocomplete({
+     source: myArray
+   });
+
+  });
 
   // show form controls when the textarea receives focus or backbutton is used and value exists
   var $commentContainerTextarea = $(".comment-container textarea"),

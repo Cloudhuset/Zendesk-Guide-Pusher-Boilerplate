@@ -1,15 +1,61 @@
-<header class="header">
-	<div class="logo">
-		{{#link 'help_center'}}
-			<img src="{{logo_url}}" alt="{{t 'logo'}}">
-		{{/link}}
-	</div>
-	<div class="nav-wrapper">
-		<span class="icon-menu"></span>
-		<nav class="user-nav" id="user-nav">
-			{{link 'community'}}
-			{{link 'new_request' class='submit-a-request'}}
-		</nav>
-		{{user_info}}
-	</div>
-</header>
+		<header class="websiteHeader" aria-label="Header Container">
+				<div class="container wrapper-header">
+						<div class="row row-padded">
+								<div class="col-xs-12 col-sm-4 col-md-3 wrapper-logo">
+										<a href="https://shop.abc.net.au" title="ABC Shop Online">
+											  <img src="{{logo_url}}" alt="{{t 'logo'}}">
+<!-- 												<img src="https://abc-shop-online.neto.com.au/assets/themes/development/images/website_logo.svg?1502941767" alt="Logo"> -->
+										</a>
+								</div>
+								<div class="col-xs-12 col-sm-5 col-md-4 col-lg-5">
+										<div class="header-search">
+												<form id="searchShop" method="get" action="https://abc-shop-produc.neto.com.au/abc-search/#" role="search" aria-label="Site Search">
+														<fieldset>
+																<legend class="visuallyhidden">Search by Name, Title, Artist or Brand</legend>
+																<input type="hidden" name="rf" value="kw" />
+																<div class="input-group">
+																		<input id="st-search-input" class="form-control st-search-input" placeholder="Search by Name, Title, Artist or Brand" type="search" aria-label="Input Search" autocomplete="off" />
+																		<span class="input-group-btn">
+									<button type="submit" value="Search" class="btn btn-primary" aria-label="Search by Name, Title, Artist or Brand">
+
+                    
+                    
+                    										<svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" xmlns:xlink="http://www.w3.org/1999/xlink" aria-labelledby="search-title" role="presentation">
+											<title id="search-title">Search by Name, Title, Artist or Brand</title>
+											<defs>
+												<path id="a" d="M9.30178551,14.2031742 C6.59901972,14.2031742 4.40039678,12.0045513 4.40039678,9.30178551 C4.40039678,6.59901972 6.59901972,4.40039678 9.30178551,4.40039678 C12.0045513,4.40039678 14.2031742,6.59901972 14.2031742,9.30178551 C14.2031742,12.0045513 12.0045513,14.2031742 9.30178551,14.2031742 L9.30178551,14.2031742 Z M14.2227798,13.2326993 C15.084724,12.1543937 15.603571,10.7897071 15.603571,9.30178551 C15.603571,5.82109931 12.7824717,3 9.30178551,3 C5.82109931,3 3,5.82109931 3,9.30178551 C3,12.7824717 5.82109931,15.603571 9.30178551,15.603571 C10.7897071,15.603571 12.1543937,15.084724 13.2326993,14.2227798 L20.0099195,21 L21,20.0099195 L14.2227798,13.2326993 Z"/>
+											</defs>
+											<g fill="none" fill-rule="evenodd" transform="translate(-2.4 -2.297)">
+												<rect width="24" height="24"/>
+												<mask id="b" fill="white">
+													<use xlink:href="#a"/>
+												</mask>
+												<use fill="#000000" xlink:href="#a"/>
+												<rect width="24" height="24" fill="#000000" mask="url(#b)"/>
+											</g>
+										</svg>
+									</button>
+								</span>
+																</div>
+														</fieldset>
+												</form>
+										</div>
+								</div>
+								<div class="hidden-xs col-sm-3 col-md-5 col-lg-3 text-right">
+										<div id="header-cart" class="btn-group">
+												<a class="btn btn-primary abcshop-inline-button" href="/hc/en-us/requests/new">
+																										<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" aria-labelledby="help-title help-desc">
+														<title id="help-title">Help</title>
+														<desc id="help-desc">Access our help and support</desc>
+														<g fill="none" fill-rule="evenodd" transform="translate(-9 -9)">
+															<circle cx="24" cy="24" r="24"/>
+															<path fill="currentColor" fill-rule="nonzero" d="M24,9.45 C15.96,9.45 9.45,15.96 9.45,24 C9.45,32.04 15.96,38.55 24,38.55 C32.04,38.55 38.55,32.04 38.55,24 C38.55,15.96 32.04,9.45 24,9.45 L24,9.45 Z M25.29,31.5 C25.29,32.52 24.51,33.3 23.43,33.3 C22.35,33.3 21.57,32.52 21.57,31.5 L21.57,31.23 C21.57,30.21 22.35,29.43 23.43,29.43 C24.51,29.43 25.29,30.21 25.29,31.23 L25.29,31.5 L25.29,31.5 Z M30.06,20.04 C30.06,23.31 27.69,24.81 24.81,25.29 L24.72,26.49 C24.63,27.06 24.21,27.54 23.61,27.54 L23.46,27.54 C22.86,27.54 22.41,27.09 22.35,26.49 L22.08,24.24 C21.99,23.55 22.38,23.01 23.1,22.95 C25.53,22.71 26.88,21.78 26.88,20.13 L26.88,20.1 C26.88,18.63 25.77,17.64 23.88,17.64 C22.5,17.64 21.39,18.12 20.34,19.08 C20.07,19.29 19.74,19.44 19.38,19.44 C18.57,19.44 17.91,18.78 17.91,18 C17.91,17.61 18.06,17.19 18.42,16.89 C19.8,15.6 21.54,14.73 23.94,14.73 C27.57,14.73 30.06,16.77 30.06,20.01 L30.06,20.04 L30.06,20.04 Z"/>
+														</g>
+													</svg>
+													<span>ABC Shop Help Center</span>
+                        </a>
+										</div>
+								</div>
+						</div>
+				</div>
+		</header>
