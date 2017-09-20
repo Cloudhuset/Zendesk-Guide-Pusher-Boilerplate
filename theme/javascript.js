@@ -4,11 +4,15 @@
 
 $(document).ready(function() {
 
+  $('html').addClass('abc-dls abc-zendesk');
+
   // social share popups
   $(".share a").click(function(e) {
     e.preventDefault();
     window.open(this.href, "", "height = 500, width = 500");
   });
+  
+  $('#query').attr('placeholder','Search ABC Shop Help Centre');
 
   // show form controls when the textarea receives focus or backbutton is used and value exists
   var $commentContainerTextarea = $(".comment-container textarea"),

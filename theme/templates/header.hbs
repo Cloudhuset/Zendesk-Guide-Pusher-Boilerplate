@@ -1,15 +1,52 @@
-<header class="header">
-	<div class="logo">
-		{{#link 'help_center'}}
-			<img src="{{logo_url}}" alt="{{t 'logo'}}">
-		{{/link}}
-	</div>
-	<div class="nav-wrapper">
-		<span class="icon-menu"></span>
-		<nav class="user-nav" id="user-nav">
-			{{link 'community'}}
-			{{link 'new_request' class='submit-a-request'}}
-		</nav>
-		{{user_info}}
+<a class="dls-masthead__skip-link sr-only sr-only-focusable" href="#content">Skip to main content</a>
+<header class="dls-masthead__header shop-help">
+	<div class="container">
+		<div class="dls-masthead__location">
+			<a href="https://shop.abc.net.au" class="dls-masthead__logo" aria-label="ABC Shop Logo">
+				<img src="{{logo_url}}" alt="{{t 'logo'}}" class="dls-icon">
+			</a>
+			<h2 class="dls-masthead__category-core">ABC Shop</h2>
+			<h3 class="dls-masthead__category-secondary">Help Centre</h3>
+		</div>
+
+		<div class="dls-masthead__actions -focus-reset">
+
+			<a href="https://shop.abc.net.au/search/" class="dls-masthead__search">
+
+
+				<svg aria-label="Magnifying glass" class="dls-masthead__search-icon" role="img" viewBox="0 0 32 32"><use xlink:href="#mglass">
+				</svg>
+				<svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
+				    <symbol id="mglass" viewBox="0 0 32 32">
+				    <title>Magnifying glass</title>
+				    <path d="M11.803 19.427c-4.205 0-7.625-3.42-7.625-7.624 0-4.205 3.42-7.625 7.625-7.625 4.204 0 7.624 3.42 7.624 7.625 0 4.204-3.42 7.624-7.624 7.624zm7.655-1.51a9.758 9.758 0 0 0 2.148-6.114A9.802 9.802 0 0 0 11.803 2 9.802 9.802 0 0 0 2 11.803a9.802 9.802 0 0 0 9.803 9.803 9.758 9.758 0 0 0 6.115-2.148L28.46 30 30 28.46 19.458 17.918z" fill="currentColor" fill-rule="evenodd" />
+				</svg>
+				<span class="dls-masthead__search-text">Search ABC Shop</span>
+			</a>
+		</div>
+												<div class="header-search js-to_expand" aria-hidden="true">
+														<form id="searchShop" method="get" action="https://shop.abc.net.au/search/" role="search" aria-label="Site Search">
+																<div class="InputAddOn">
+																  <label for="st-search-input" class="visuallyhidden">Input Search</label>
+																  <input id="st-search-input" placeholder="Search by Name, Title, Artist or Brand" type="search" aria-label="Input Search" autocomplete="off" class="dls-text-input__field" />
+																  <button type="submit" value="Search" class="st-search-input dls-btn -reversed shop-btn-search" aria-label="Search by Name, Title, Artist or Brand">
+		            										<svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" xmlns:xlink="http://www.w3.org/1999/xlink" class="shop-svg" aria-labelledby="search-title" role="presentation">
+																			<title id="search-title">Search by Name, Title, Artist or Brand</title>
+																			<defs>
+																				<path id="a" d="M9.30178551,14.2031742 C6.59901972,14.2031742 4.40039678,12.0045513 4.40039678,9.30178551 C4.40039678,6.59901972 6.59901972,4.40039678 9.30178551,4.40039678 C12.0045513,4.40039678 14.2031742,6.59901972 14.2031742,9.30178551 C14.2031742,12.0045513 12.0045513,14.2031742 9.30178551,14.2031742 L9.30178551,14.2031742 Z M14.2227798,13.2326993 C15.084724,12.1543937 15.603571,10.7897071 15.603571,9.30178551 C15.603571,5.82109931 12.7824717,3 9.30178551,3 C5.82109931,3 3,5.82109931 3,9.30178551 C3,12.7824717 5.82109931,15.603571 9.30178551,15.603571 C10.7897071,15.603571 12.1543937,15.084724 13.2326993,14.2227798 L20.0099195,21 L21,20.0099195 L14.2227798,13.2326993 Z"/>
+																			</defs>
+																			<g fill="none" fill-rule="evenodd" transform="translate(-2.4 -2.297)">
+																				<rect width="24" height="24"/>
+																				<mask id="b" fill="white">
+																					<use xlink:href="#a"/>
+																				</mask>
+																				<use fill="#000000" xlink:href="#a"/>
+																				<rect width="24" height="24" fill="#000000" mask="url(#b)"/>
+																			</g>
+																		</svg>
+																	</button>
+																</div>
+														</form>
+												</div>
 	</div>
 </header>

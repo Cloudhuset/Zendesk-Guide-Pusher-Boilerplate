@@ -1,22 +1,24 @@
-<footer class="footer">
-	<div class="footer-inner">
-		{{#link 'help_center'}}{{help_center.name}}{{/link}}
-
-		<div class="footer-language-selector">
-			{{#if alternative_locales}}
-				<div class="dropdown language-selector" aria-haspopup="true">
-					<a class="dropdown-toggle">
-						{{current_locale.name}}
-					</a>
-					<span class="dropdown-menu dropdown-menu-end" role="menu">
-						{{#each alternative_locales}}
-							<a href="{{url}}" dir="{{direction}}" rel="nofollow" role="menuitem">
-								{{name}}
-							</a>
-						{{/each}}
-					</span>
+		<footer class="dls-footer">
+				<div class="container">
+						<div class="footer-details">
+							<h2 class="dls-footer__title dls-text -light -master">ABC Shop Customer Care</h2>
+							<ul role="contentinfo" aria-label="Company Details">
+								<li><i class="fa fa-map-marker"></i> <span>GPO Box 9994, Sydney, 2001, NSW, Australia</span></li>
+								<li><i class="fa fa-phone"></i> <a href=" 1300 360 111 (Aus)"> 1300 360 111 (Aus)</a></li>
+								<li><i class="fa fa-clock-o"></i> <span>Mon-Fri 9am-5pm AEST</span></li>
+							</ul>
+							<span>All our profits are invested into the ABC to deliver quality programs for our community.</span>
+						</div>
+						<hr class="dls-hr -hairline -always">
+						<div class="dls-footer__privacy">
+								<ul>
+										<li class="-copyright"><a href="http://www.abc.net.au/conditions.htm#UseOfContent">© 2017 ABC</a></li>
+										<li><a href="http://www.abc.net.au/conditions.htm">Terms of Use</a></li>
+										<li><a href="http://www.abc.net.au/help/accessibility.htm">Accessibility</a></li>
+										<li><a href="http://about.abc.net.au/abc-privacy-policy/">Privacy Policy</a></li>
+								</ul>
+						</div>
+						<hr class="dls-hr -hairline">
+						<div class="dls-footer__copyright">© 2017 ABC</div>
 				</div>
-			{{/if}}
-		</div>
-	</div>
-</footer>
+		</footer>
