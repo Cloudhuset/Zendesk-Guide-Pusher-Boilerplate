@@ -22,6 +22,7 @@
       </section>
     </section>
 
+
     <article class="article dls-article__body">
       <header class="article-header">
         <h1 title="{{article.title}}" class="article-title sectionHeading dls-text -headline-lg">
@@ -34,7 +35,8 @@
 
       <section class="article-info">
         <div class="article-content">
-          <div class="article-body ">{{article.body}}</div>
+
+          <div class="article-body">{{article.body}}</div>
 
           <div class="article-attachments">
             <ul class="attachments">
@@ -51,17 +53,7 @@
           </div>
         </div>
       </section>
-
       <footer>
-{{!--         <div class="article-footer">
-          <div class="article-share">{{share}}</div>
-          {{#if comments}}
-            <a href="#article-comments" class="article-comment-count">
-              <span class="icon-comments"></span>
-              {{article.comment_count}}
-            </a>
-          {{/if}}
-        </div> --}}
         {{#with article}}
           <div class="article-votes">
             <span class="article-votes-question">{{t 'was_this_article_helpful'}}</span>
@@ -89,7 +81,7 @@
       </section>
       <div class="article-comments" id="article-comments">
         <section class="comments">
-{{!--           <header class="comment-overview">
+          <header class="comment-overview">
             <h3 class="comment-heading">
               {{t 'comments'}}
             </h3>
@@ -104,8 +96,7 @@
                 </span>
               </div>
             {{/if}}
-          </header> --}}
-
+          </header>
           <ul id="comments" class="comment-list">
             {{#each comments}}
               <li id="{{anchor}}" class="comment">

@@ -8,13 +8,21 @@
   <div class="section-container">
     <section class="section-content">
       <header class="page-header">
+<<<<<<< HEAD
         <h1 class="sectionHeading">
+=======
+        <h1>
+>>>>>>> ab81afee778931d3a39db7b85c2aa753613f57d2
           {{section.name}}
           {{#if section.internal}}
             <span class="icon-lock" title="{{t 'internal'}}"></span>
           {{/if}}
         </h1>
+<<<<<<< HEAD
         {{!-- {{subscribe}} --}}
+=======
+        {{subscribe}}
+>>>>>>> ab81afee778931d3a39db7b85c2aa753613f57d2
         {{#if section.description}}
           <p class="page-header-description">{{section.description}}</p>
         {{/if}}
@@ -22,7 +30,11 @@
 
 
       {{#if section.articles}}
+<<<<<<< HEAD
         <ul class="article-list dls-ul">
+=======
+        <ul class="article-list">
+>>>>>>> ab81afee778931d3a39db7b85c2aa753613f57d2
           {{#each section.articles}}
             <li class="article-list-item {{#if promoted}} article-promoted{{/if}}">
               {{#if promoted}}
