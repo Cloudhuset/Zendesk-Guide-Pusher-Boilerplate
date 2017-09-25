@@ -1,22 +1,4 @@
 @charset "UTF-8";
-html.abc-zendesk body {
-    // margin-top: 90px;
-}
-
-@media (max-width: 768px) {
-    html.abc-zendesk body {
-        margin-top: 0px;
-    }
-}
-
-#header-cart>a {
-    height: 47px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 10px;
-    font-size: 1rem;
-}
 
 .visuallyhidden {
     border: 0;
@@ -58,8 +40,6 @@ html.abc-zendesk body {
     margin: 0 5px;
 }
 
-
-
 .shop-help-btn {
     letter-spacing: inherit;
 }
@@ -67,7 +47,6 @@ html.abc-zendesk body {
 .sectionHeading {
     padding: 8px 20px;
     margin-bottom: 30px;
-    font-family: "ABCSans Bold", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
     font-size: 20px;
     line-height: 1.5em;
     letter-spacing: 0.8px;
@@ -92,13 +71,21 @@ html.abc-zendesk body {
     padding: 0 1rem;
     flex: 1;
 }
-
 .shop-help .dls-masthead__logo {
     background-color: transparent;
 }
 
+
+
 .shop-help .dls-masthead__category-core {
     margin-left: 0;
+}
+
+
+
+.shop-help .dls-masthead__search-icon {
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 .js-to_expand[aria-hidden=true],
@@ -171,7 +158,6 @@ html.abc-zendesk body {
 /***** Base *****/
 
 body {
-    font-family: "ABCSans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -830,25 +816,15 @@ input[type="submit"][disabled] {
 }
 
 
-
-
-
-
-
-
-
-
-
-
 /***** Search field *****/
 .search {
     position: relative;
 }
 
 .search input[type="search"] {
-    border: 1px solid #ddd; // border-radius: 30px;
+    border-radius: 0px;
     box-sizing: border-box;
-    color: #999;
+    color: #737373;
     height: 40px;
     padding-left: 40px;
     padding-right: 20px;
@@ -900,7 +876,7 @@ input[type="submit"][disabled] {
     // background-image: url($homepage_background_image);
     // background-position: center;
     // background-size: cover;
-    background-color: $color_1;
+    background-color: #2B3336;
     height: 300px;
     padding: 0 20px;
     text-align: center;
@@ -2037,7 +2013,6 @@ input[type="submit"][disabled] {
     -ms-hyphens: auto;
     -webkit-hyphens: auto;
     word-break: break-word;
-    font-family: "ABCSans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
     line-height: 1.6;
 }
 
@@ -2396,7 +2371,6 @@ input[type="submit"][disabled] {
     content: attr(data-follower-count);
     color: $color_1;
     display: inline-block;
-    font-family: "ABCSans Bold", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
     margin-left: 15px;
     padding-left: 10px;
     position: absolute;
@@ -2713,7 +2687,6 @@ input[type="submit"][disabled] {
 }
 
 .post-content {
-    font-family: "ABCSans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
     line-height: 1.6;
     word-break: break-word;
 }
