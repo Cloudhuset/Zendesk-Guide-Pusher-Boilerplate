@@ -1,22 +1,51 @@
 <div class="container-divider"></div>
 <div class="container">
-	<nav class="sub-nav">
-		{{breadcrumbs}}
-		{{search submit=false}}
-	</nav>
+  <nav class="sub-nav">
+    {{breadcrumbs}}
+    {{search submit=false}}
+  </nav>
 
-	<h1>
-		{{t 'submit_a_request'}}
-		{{#if follow_up}}
-			<span class="follow-up-hint">
-				{{follow_up}}
-			</span>
-		{{/if}}
-	</h1>
+  <h1 class="sectionHeading">
+    {{t 'submit_a_request'}}
+    {{#if follow_up}}
+      <span class="follow-up-hint">
+        {{follow_up}}
+      </span>
+    {{/if}}
+  </h1>
 
-	<div class="form">
-		{{request_form}}
-	</div>
+  <div class="dls-row pl1 pr1">
+    <div class="form dls-form mb6 dls-col -xs-12 -sm-12 -md-8 -lg-8 -xl-8">
+      {{request_form}}
+    </div>
+    <aside class="dls-col -xs-12 -sm-12 -md-4 -lg-4 -xl-4 ">
+        <header>
+          <h2 class="sectionHeading dls-text -headline-md">Help</h2>
+        </header>
+        <div>
+          <h3 class="dls-text -headline-sm">Post</h3>
+          <p>Our postal address is:</p>
+          <address>
+          The ABC Shop<br>
+          Customer Order Centre<br>
+          GPO Box 9994<br>
+          Sydney NSW 2001<br>
+          Australia<br>
+          </address>
+        </div>
+        <div>
+          <h3 class="dls-text -headline-sm">ABC Centres</h3>
+          <p>Find the <a href="https://shop.abc.net.au/store_locator" data-wt.z_ca="Contact Sidebar Help">address and contact details</a> of your nearest ABC Centre.</p>
+          <h3>Contacting the ABC</h3>
+          <p>For all other ABC enquiries <a href="http://www.abc.net.au/contact/" target="_blank">contact the ABC</a> or phone your local ABC switchboard.</p>
 
-	{{chat}}
+        </div>
+        <div>
+          <h3 class="dls-text -headline-sm">Feedback and Complaints Handling Procedure</h3>
+          <p>The ABC Shop welcomes feedback and attends to all complaints promptly. Please email, fax or write to us using the contact details.</p>
+        </div>
+    </aside>
+  </div>
+
+  {{chat}}
 </div>

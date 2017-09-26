@@ -1,15 +1,24 @@
-<header class="header">
-	<div class="logo">
-		{{#link 'help_center'}}
-			<img src="{{logo_url}}" alt="{{t 'logo'}}">
-		{{/link}}
-	</div>
-	<div class="nav-wrapper">
-		<span class="icon-menu"></span>
-		<nav class="user-nav" id="user-nav">
-			{{link 'community'}}
-			{{link 'new_request' class='submit-a-request'}}
-		</nav>
-		{{user_info}}
+<a class="dls-masthead__skip-link sr-only sr-only-focusable" href="#content">Skip to main content</a>
+<header class="dls-masthead__header shop-help">
+	<div class="container">
+		<div class="dls-masthead__location">
+			<a href="/" class="dls-masthead__logo" aria-label="ABC Shop Logo">
+				<img src="{{logo_url}}" alt="{{t 'logo'}}" class="dls-icon" width="32" height="32">
+			</a>
+			<h2 class="dls-masthead__category-core">ABC Shop</h2>
+			<h3 class="dls-masthead__category-secondary">Help Centre</h3>
+		</div>
+		<div class="dls-masthead__actions -focus-reset">
+			<a href="https://shop.abc.net.au/search/" class="dls-masthead__search">
+				<svg aria-label="Magnifying glass" class="dls-masthead__search-icon" role="presentation" viewBox="0 0 32 32" width="1rem" height: "1rem"><use xlink:href="#dls-search">
+				</svg>
+				<svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
+				    <symbol id="dls-search" viewBox="0 0 32 32">
+				    <title>Search ABC Shop</title>
+				    <path d="M11.803 19.427c-4.205 0-7.625-3.42-7.625-7.624 0-4.205 3.42-7.625 7.625-7.625 4.204 0 7.624 3.42 7.624 7.625 0 4.204-3.42 7.624-7.624 7.624zm7.655-1.51a9.758 9.758 0 0 0 2.148-6.114A9.802 9.802 0 0 0 11.803 2 9.802 9.802 0 0 0 2 11.803a9.802 9.802 0 0 0 9.803 9.803 9.758 9.758 0 0 0 6.115-2.148L28.46 30 30 28.46 19.458 17.918z" fill="currentColor" fill-rule="evenodd" />
+				</svg>
+				<span class="dls-masthead__search-text">Search ABC Shop</span>
+			</a>
+		</div>
 	</div>
 </header>
