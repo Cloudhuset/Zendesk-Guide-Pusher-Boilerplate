@@ -1,4 +1,7 @@
-# Zendesk Guide Pusher Boilerplate
+# Zendesk Guide Pusher Boilerplate - DEPRECATED
+
+## Deprecated
+This repository is deprecated. Please look at https://github.com/Cloudhuset/Zendesk-Guide-Theme-Boilerplate instead.
 
 ## What is it?
 This repository is a boilerplate project for developing Zendesk Guide themes, with the Zendesk Guide Pusher package. In here is included: the standard Copenhagen theme from Zendesk with templates, css and javascript.
